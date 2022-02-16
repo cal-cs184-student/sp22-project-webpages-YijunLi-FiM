@@ -28,9 +28,9 @@ This project aims to implement a functional vector graphics renderer supporting 
 ## Task 3: Transform
 - Create an updated version of `svg/transforms/robot.svg` with cubeman doing something more interesting, like waving or running. Explain what you were trying to do with cubeman in words.
   The modified vector graphic is as follows: 
-  ![](docs/my_robot.svg)
+  ![](docs/my_robot.svg)  
   The render result is: 
-  ![](images/img5.png)
+  ![](images/img5.png)  
   To model a running robot, every block of its limbs is rotated and moved differently. Its right inner arm was rotated anticlockwise 45 deg and pushed outward while the right outer arm maintains level, and its left arm was rotated clockwise 90 deg as a whole, then the left outer arm was rotated 45 deg anticlockwise to form the upper body posture. Similar adjustments were made to its legs.   
 ## Task 4: Barycentric coordinates
 - Explain barycentric coordinates in your own words and use an image to aid you in your explanation. 
