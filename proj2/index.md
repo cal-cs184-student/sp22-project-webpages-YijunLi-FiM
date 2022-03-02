@@ -98,7 +98,7 @@ If we pre-split edges of sharp corners, the result becomes sharper. Similarly, i
 3|![](images/q6-4.png)|![](images/q6-1-4.png)|![](images/q6-2-4.png)|
 
 - Load `dae/cube.dae`. Perform several iterations of loop subdivision on the cube. Notice that the cube becomes slightly asymmetric after repeated subdivisions. Can you pre-process the cube with edge flips and splits so that the cube subdivides symmetrically? Document these effects and explain why they occur. Also explain how your pre-processing helps alleviate the effects. <br/>
-Because topologically the diagonal is not symmetric, as we subdivide and such topology is used for determining new positions of vertices, over time the overall topology "skews" that way as well.  (original)
+Because topologically the diagonal is not symmetric, as we subdivide and such topology is used for determining new positions of vertices, over time the overall topology "skews" that way as well. (original) <br/>
   ![](images/img30.png) <br/>
   ![](images/img31.png) <br/>
   ![](images/img32.png) <br/>
