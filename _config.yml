@@ -1,1 +1,6 @@
 theme: jekyll-theme-cayman
+markdown: kramdown
+kramdown:
+  math_engine: mathjax  # default in Kramdown
+  math_engine_opts:
+    preview: true   # not default but better acessibility
