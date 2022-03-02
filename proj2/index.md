@@ -56,11 +56,10 @@ The whole process is bugless, I became paranoid when I saw some edges disappeari
 ## Task 5: Edge Split
 - Briefly explain how you implemented the edge split operation and describe any interesting implementation / debugging tricks you have used. <br/>
 Similar to task 4, I drew a graph to make sure I do not brainf**k myself when naming elements.<br/>
-  ![](images/convention.svg)<br/>
-First, I explicitly get iterators to all elements with naming convention in this picture. <br/>
-Second, I create new elements, namely `m`, `h10-15`, `e5-7`, `f2-3`. Set `e5` and `e6` `isNew` to be `true` for the purpose of T6. Set `m` `isNew` to be `true` for the purpose of T6. <br/>
-Finally, I reassign halfedge of edges/vertices/faces and updated next/twin/vertex/face/edge of halfedges. Finally return `e0`. Simple and stupid.
-
+  ![](images/convention.svg) <br/>
+  First, I explicitly get iterators to all elements with naming convention in this picture. <br/>
+  Second, I create new elements, namely `m`, `h10-15`, `e5-7`, `f2-3`. Set `e5` and `e6` `isNew` to be `true` for the purpose of T6. Set `m` `isNew` to be `true` for the purpose of T6. <br/>
+  Finally, I reassign halfedge of edges/vertices/faces and updated next/twin/vertex/face/edge of halfedges. Finally return `e0`. Simple and stupid.
 - Show screenshots of a mesh before and after some edge splits. <br/>
   Before: <br/>
   ![](images/img20.png) <br/>
@@ -72,9 +71,9 @@ Finally, I reassign halfedge of edges/vertices/faces and updated next/twin/verte
   After: <br/>
   ![](images/img23.png) <br/>
 - Write about your eventful debugging journey, if you have experienced one. <br/>
-Some half edges are not rendering correctly. I double-checked 
+  Some half edges are not rendering correctly. I double-checked my graph and fixed some wrong vertex neighbor assignments. 
 - If you have implemented support for boundary edges, show screenshots of your implementation properly handling split operations on boundary edges. <br/>
-  For implementation, see branch `q5-ec`.<br/>
+  For implementation, see branch `q5-ec`. <br/>
   ![](images/q5-ec.png) <br/>
   ![](images/q5-ec-1.png)
 
@@ -85,18 +84,15 @@ I did exactly the same thing as the comments mentioned: <br/>
 2. for each edge, calculate the new position of the vertex which will be created from its splitting based on four vertices mentioned in the spec, and set its `isNew` to false; <br/>
 3. split all edges that does not has `isNew` set AND has two non-new vertices (that is, it's not a split edge), and set resulting new vertex to `newPosition` of the edge calculated in (2); <br/>
 4. flip all edges that has `isNew` set and has one old vertex and one new vertex (use xor to calculate)
-
 - Take some notes, as well as some screenshots, of your observations on how meshes behave after loop subdivision. What happens to sharp corners and edges? Can you reduce this effect by pre-splitting some edges? <br/>
 Sharp corners and edges got smoother. This is `.\dae\icosahedron\input.dae`. <br/>
 If we pre-split edges of sharp corners, the result becomes sharper. Similarly, if we pre-split other edges of sharp edges' faces, the result becomes sharper. <br/>
-
 |Splits/Position|No|Vertex|Edge|
 ---|---|---|---|
 0|![](images/q6-1.png)|![](images/q6-1-1.png)|![](images/q6-2-1.png)|
 1|![](images/q6-2.png)|![](images/q6-1-2.png)|![](images/q6-2-2.png)|
 2|![](images/q6-3.png)|![](images/q6-1-3.png)|![](images/q6-2-3.png)|
 3|![](images/q6-4.png)|![](images/q6-1-4.png)|![](images/q6-2-4.png)|
-
 - Load `dae/cube.dae`. Perform several iterations of loop subdivision on the cube. Notice that the cube becomes slightly asymmetric after repeated subdivisions. Can you pre-process the cube with edge flips and splits so that the cube subdivides symmetrically? Document these effects and explain why they occur. Also explain how your pre-processing helps alleviate the effects. <br/>
 Because topologically the diagonal is not symmetric, as we subdivide and such topology is used for determining new positions of vertices, over time the overall topology "skews" that way as well. (original) <br/>
   ![](images/img30.png) <br/>
@@ -114,12 +110,10 @@ I used scheme in [this paper](http://www.geometry.caltech.edu/pubs/WWTDS06.pdf) 
 ## Task 7: Design Mesh
 - Save your best polygon mesh as `partsevenmodel.dae` in your docs folder and show us a screenshot of the mesh in your write-up. <br/>
 [upe](images/partsevenmodel.dae)
-
 - Include a series of screenshots showing your original mesh and your mesh after one and two rounds of subdivision. If you have used custom shaders, include screenshots of your mesh with those shaders applied as well. <br/>
 ![upe](images/upe.png) <br/>
 ![upe](images/q7-1.png) <br/>
 ![upe](images/q7-2.png) <br/>
 ![upe](images/q7-3.png) <br/>
-
 - Describe what you have done to enhance your mesh beyond the simple humanoid mesh described in the tutorial. <br/>
 I subdivided it with Cinema 4D (this is created a while ago when it was free for students), I also changed camera settings per Piazza so it doesn't screw up. 
