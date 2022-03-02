@@ -87,12 +87,14 @@ I did exactly the same thing as the comments mentioned: <br/>
 - Take some notes, as well as some screenshots, of your observations on how meshes behave after loop subdivision. What happens to sharp corners and edges? Can you reduce this effect by pre-splitting some edges? <br/>
 Sharp corners and edges got smoother. This is `.\dae\icosahedron\input.dae`. <br/>
 If we pre-split edges of sharp corners, the result becomes sharper. Similarly, if we pre-split other edges of sharp edges' faces, the result becomes sharper. <br/>
+
 |Splits/Position|No|Vertex|Edge|
----|---|---|---|
-0|![](images/q6-1.png)|![](images/q6-1-1.png)|![](images/q6-2-1.png)|
-1|![](images/q6-2.png)|![](images/q6-1-2.png)|![](images/q6-2-2.png)|
-2|![](images/q6-3.png)|![](images/q6-1-3.png)|![](images/q6-2-3.png)|
-3|![](images/q6-4.png)|![](images/q6-1-4.png)|![](images/q6-2-4.png)|
+|---|---|---|---|
+|0|![](images/q6-1.png)|![](images/q6-1-1.png)|![](images/q6-2-1.png)|
+|1|![](images/q6-2.png)|![](images/q6-1-2.png)|![](images/q6-2-2.png)|
+|2|![](images/q6-3.png)|![](images/q6-1-3.png)|![](images/q6-2-3.png)|
+|3|![](images/q6-4.png)|![](images/q6-1-4.png)|![](images/q6-2-4.png)|
+
 - Load `dae/cube.dae`. Perform several iterations of loop subdivision on the cube. Notice that the cube becomes slightly asymmetric after repeated subdivisions. Can you pre-process the cube with edge flips and splits so that the cube subdivides symmetrically? Document these effects and explain why they occur. Also explain how your pre-processing helps alleviate the effects. <br/>
 Because topologically the diagonal is not symmetric, as we subdivide and such topology is used for determining new positions of vertices, over time the overall topology "skews" that way as well. (original) <br/>
   ![](images/img30.png) <br/>
