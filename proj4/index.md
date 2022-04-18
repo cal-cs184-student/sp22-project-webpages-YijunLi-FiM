@@ -36,11 +36,11 @@ This project aims to simulate fabric's interaction with physical environment, wi
   With default parameters: ![](images/p2/pinned4.png)
 
   <video controls>
-  <source src="https://user-images.githubusercontent.com/27878967/163852372-ebdeffe9-9adc-45f8-a26d-793ad0e585c0.mp4" type="video/mp4">
+  <source src="https://raw.githubusercontent.com/cal-cs184-student/sp22-project-webpages-YijunLi-FiM/master/proj4/images/p2/parameters.mp4" type="video/mp4">
   </video> 
 
   <video controls>
-  <source src="https://user-images.githubusercontent.com/27878967/163853701-5ad1b5a4-60f1-45da-b74a-81de7bfa5100.mp4" type="video/mp4">
+  <source src="https://raw.githubusercontent.com/cal-cs184-student/sp22-project-webpages-YijunLi-FiM/master/proj4/images/p2/springs.mp4" type="video/mp4">
   </video> 
 
 ## Part 3: Handling collisions with other objects
@@ -57,7 +57,7 @@ This project aims to simulate fabric's interaction with physical environment, wi
   ![](images/p3/plane.png)
 
   <video controls>
-  <source src="https://user-images.githubusercontent.com/27878967/163853833-7277db19-1b7b-4b34-884a-76cde1647ab8.mp4" type="video/mp4">
+  <source src="https://raw.githubusercontent.com/cal-cs184-student/sp22-project-webpages-YijunLi-FiM/master/proj4/images/p3/p3.mp4" type="video/mp4">
   </video> 
 
 ## Part 4: Handling self-collisions
@@ -80,8 +80,9 @@ This project aims to simulate fabric's interaction with physical environment, wi
   | 5000  |![](images/p4/5_5k.png)|![](images/p4/50_5k.png)|![](images/p4/500_5k.png)|
   | 50000 |![](images/p4/5_50k.png)|![](images/p4/50_50k.png)|![](images/p4/500_50k.png)|
   </br>
+  Demonstration:
   <video controls>
-  <source src="https://user-images.githubusercontent.com/27878967/163854028-fb384b76-93b8-48da-b35f-b94294b01a7e.mp4" type="video/mp4">
+  <source src="https://raw.githubusercontent.com/cal-cs184-student/sp22-project-webpages-YijunLi-FiM/master/proj4/images/p4/p4.mp4" type="video/mp4">
   </video> 
 
 ## Part 5: Shaders
