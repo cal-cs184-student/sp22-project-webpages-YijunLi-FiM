@@ -36,11 +36,11 @@ This project aims to simulate fabric's interaction with physical environment, wi
   With default parameters: ![](images/p2/pinned4.png)
 
   <video controls>
-  <source src="github.com/cal-cs184-student/sp22-project-webpages-YijunLi-FiM/raw/master/proj4/images/p2/springs.mp4" type="video/mp4">
+  <source src="raw.githubusercontent.com/cal-cs184-student/sp22-project-webpages-YijunLi-FiM/master/proj4/images/p2/springs.mp4" type="video/mp4">
   </video> 
 
   <video controls>
-  <source src="github.com/cal-cs184-student/sp22-project-webpages-YijunLi-FiM/raw/master/proj4/images/p2/parameters.mp4" type="video/mp4">
+  <source src="raw.githubusercontent.com/cal-cs184-student/sp22-project-webpages-YijunLi-FiM/master/proj4/images/p2/parameters.mp4" type="video/mp4">
   </video> 
 
 ## Part 3: Handling collisions with other objects
@@ -57,7 +57,7 @@ This project aims to simulate fabric's interaction with physical environment, wi
   ![](images/p3/plane.png)
 
   <video controls>
-  <source src="github.com/cal-cs184-student/sp22-project-webpages-YijunLi-FiM/raw/master/proj4/images/p3/p3.mp4" type="video/mp4">
+  <source src="raw.githubusercontent.com/cal-cs184-student/sp22-project-webpages-YijunLi-FiM/master/proj4/images/p3/p3.mp4" type="video/mp4">
   </video> 
 
 ## Part 4: Handling self-collisions
@@ -81,7 +81,7 @@ This project aims to simulate fabric's interaction with physical environment, wi
   | 50000 |![](images/p4/5_50k.png)|![](images/p4/50_50k.png)|![](images/p4/500_50k.png)|
   </br>
   <video controls>
-  <source src="github.com/cal-cs184-student/sp22-project-webpages-YijunLi-FiM/raw/master/proj4/images/p4/p4.mp4" type="video/mp4">
+  <source src="raw.githubusercontent.com/cal-cs184-student/sp22-project-webpages-YijunLi-FiM/master/proj4/images/p4/p4.mp4" type="video/mp4">
   </video> 
 
 ## Part 5: Shaders
@@ -124,5 +124,5 @@ This project aims to simulate fabric's interaction with physical environment, wi
 ![](images/p5/dr4.png)  
 
 <video controls>
-  <source src="github.com/cal-cs184-student/sp22-project-webpages-YijunLi-FiM/raw/master/proj4/images/p5/p5.mp4" type="video/mp4">
+  <source src="raw.githubusercontent.com/cal-cs184-student/sp22-project-webpages-YijunLi-FiM/master/proj4/images/p5/p5.mp4" type="video/mp4">
 </video> 
